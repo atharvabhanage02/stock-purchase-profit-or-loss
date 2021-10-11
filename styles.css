@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
     padding: 0;
@@ -13,7 +13,7 @@ body{
 h1{
     margin-top:2rem ;
     margin-bottom: 2rem;
-    font-weight: bolder;
+    font-weight:bold;
 }
 label{
     font-size: large;
@@ -27,7 +27,7 @@ input{
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     font-size: large;
-    border: 1px solid blue;
+    border: 2px solid #00B0FF;
     border-radius: 1rem;
     width: 100%;
     max-width: 325px;
@@ -35,13 +35,18 @@ input{
 #btn {
     
     border: none;
-    
+    color: white;
+    font-weight: bolder;
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
     font-size: large;
     cursor: pointer;
-    
+    background-color: #00B0FF;
     margin: auto;
     display: block;
   }
-
+  div{
+      font-size: x-large;
+      margin-top: 1.5rem;
+      font-weight: bolder;
+  }
