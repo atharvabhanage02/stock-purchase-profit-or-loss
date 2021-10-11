@@ -1,7 +1,7 @@
 const inputValue = document.querySelector("#initial-input")
 const quantityStk = document.querySelector("#quantity-of-stocks")
 const currentPrice = document.querySelector("#current-price")
-const btnCheck = document.querySelector("#btn-check")
+const btnCheck = document.querySelector("#btn")
 const output = document.querySelector("#output")
 
 
@@ -10,10 +10,12 @@ function calculateProfitOrLoss(initial,qty,current){
         var loss = (initial-current)*qty;
         var lossPercent = (loss/(initial*qty))*100;
         output.innerText = `You are in loss ${loss} with ${lossPercent}%`; 
+        output.style.color = 'red';
     }else if(current>initial){
         var profit = (current-initial)*qty;
         var profitPercent = (profit/(initial*qty))*100;
         output.innerText = `You are in profit ${profit} with ${profitPercent}%`;
+        output.style.color = 'green';
     }else{
         output.innerText ="No Pain No Gain , No Gain No Pain"
     }
